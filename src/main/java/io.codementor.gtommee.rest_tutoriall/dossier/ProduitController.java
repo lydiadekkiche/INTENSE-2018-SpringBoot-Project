@@ -48,4 +48,16 @@ public class ProduitController {
         return marge;
 
     }
+
+    // trier
+    @RequestMapping(value = "/k", method = RequestMethod.GET)
+    public Iterable<produit> testTriDesc() {
+
+        Iterable<produit> personnesTrouvees =
+                repository.findAll(new Sort(Sort.Direction.ASC, "name"));
+        return personnesTrouvees;
+    }
+
+
+
 }
