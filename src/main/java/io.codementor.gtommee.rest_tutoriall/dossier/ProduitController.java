@@ -27,4 +27,11 @@ public class ProduitController {
         return repository.findAll();
 
     }
+
+    @RequestMapping(value = "/p", method = RequestMethod.POST)
+    public produit createproduit(@Valid @RequestBody produit p) {
+        p.set_id(ObjectId.get());
+        repository.save(p);
+        return p;
+    }
 }
