@@ -60,4 +60,8 @@ public class ProduitController {
 
 
 
+    @RequestMapping(value = "/Produits", method = RequestMethod.GET)
+    public String listeProduits() {
+        return "Un exemple de produit";
+    }
 }
