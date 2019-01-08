@@ -1,2 +1,2 @@
-# spring
+# Spring Boot Project
 javaEE spring 
