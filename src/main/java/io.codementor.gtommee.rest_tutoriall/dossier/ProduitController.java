@@ -34,4 +34,18 @@ public class ProduitController {
         repository.save(p);
         return p;
     }
+
+    //Marge
+    @RequestMapping(value = "/marge", method = RequestMethod.GET)
+    public List<String> getmarge() {
+        List<produit> produits = repository.findAll();
+        List<String> marge = new ArrayList<String>();
+        for (produit p : produits) {
+            int margeProd = p.prixvente - p.prixachat;
+            marge.add(p.name + " " + margeProd);
+        }
+
+        return marge;
+
+    }
 }
