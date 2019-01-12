@@ -1,0 +1,321 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Spring Boot project",
+		"_postman_id": "406feefd-659d-6e8d-4a6d-2e9ffc283827",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get product",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							" {",
+							"     \"itemName\": \"kaka\",",
+							"        \"itemQuantity\": \"12\",",
+							"        \"itemBought\": \"false\"",
+							"     ",
+							" }"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "http://localhost:4445/produit/",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\": \"lydia\", \n\"prixachat\": 200, \n\"prixvente\": 100\n\t\n}"
+				},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "ece5be21-8bbc-4a2f-a4dd-c969eea8ce77",
+					"name": "Get all products ",
+					"originalRequest": {
+						"url": "http://localhost:4445/produit/",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"name\": \"lydia\", \n\"prixachat\": 200, \n\"prixvente\": 100\n\t\n}"
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json;charset=UTF-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Sat, 12 Jan 2019 21:15:25 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "transfer-encoding",
+							"key": "transfer-encoding",
+							"value": "chunked",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						}
+					],
+					"cookie": [],
+					"responseTime": 145,
+					"body": "[{\"_id\":{\"timestamp\":1545836541,\"machineIdentifier\":6071921,\"processIdentifier\":-18029,\"counter\":746975,\"time\":1545836541000,\"date\":\"2018-12-26T15:02:21.000+0000\",\"timeSecond\":1545836541},\"name\":\"spot\",\"prixachat\":0,\"prixvente\":0},{\"_id\":{\"timestamp\":1545836541,\"machineIdentifier\":6071921,\"processIdentifier\":-18029,\"counter\":746976,\"time\":1545836541000,\"date\":\"2018-12-26T15:02:21.000+0000\",\"timeSecond\":1545836541},\"name\":\"belle\",\"prixachat\":0,\"prixvente\":0},{\"_id\":{\"timestamp\":1545837167,\"machineIdentifier\":11333434,\"processIdentifier\":1788,\"counter\":11426530,\"time\":1545837167000,\"date\":\"2018-12-26T15:12:47.000+0000\",\"timeSecond\":1545837167},\"name\":\"koukou\",\"prixachat\":0,\"prixvente\":0},{\"_id\":{\"timestamp\":1545839302,\"machineIdentifier\":6071921,\"processIdentifier\":-18029,\"counter\":746979,\"time\":1545839302000,\"date\":\"2018-12-26T15:48:22.000+0000\",\"timeSecond\":1545839302},\"name\":\"spot\",\"prixachat\":250,\"prixvente\":200},{\"_id\":{\"timestamp\":1545994937,\"machineIdentifier\":11333434,\"processIdentifier\":3093,\"counter\":12242844,\"time\":1545994937000,\"date\":\"2018-12-28T11:02:17.000+0000\",\"timeSecond\":1545994937},\"name\":\"koukou\",\"prixachat\":0,\"prixvente\":0},{\"_id\":{\"timestamp\":1545995337,\"machineIdentifier\":11333434,\"processIdentifier\":3093,\"counter\":12242845,\"time\":1545995337000,\"date\":\"2018-12-28T11:08:57.000+0000\",\"timeSecond\":1545995337},\"name\":\"lydia\",\"prixachat\":0,\"prixvente\":0},{\"_id\":{\"timestamp\":1545995340,\"machineIdentifier\":11333434,\"processIdentifier\":3093,\"counter\":12242846,\"time\":1545995340000,\"date\":\"2018-12-28T11:09:00.000+0000\",\"timeSecond\":1545995340},\"name\":\"lydia\",\"prixachat\":0,\"prixvente\":0},{\"_id\":{\"timestamp\":1545995352,\"machineIdentifier\":11333434,\"processIdentifier\":3093,\"counter\":12242847,\"time\":1545995352000,\"date\":\"2018-12-28T11:09:12.000+0000\",\"timeSecond\":1545995352},\"name\":\"lydia\",\"prixachat\":200,\"prixvente\":0},{\"_id\":{\"timestamp\":1545995381,\"machineIdentifier\":11333434,\"processIdentifier\":3093,\"counter\":12242848,\"time\":1545995381000,\"date\":\"2018-12-28T11:09:41.000+0000\",\"timeSecond\":1545995381},\"name\":\"lydia\",\"prixachat\":200,\"prixvente\":0},{\"_id\":{\"timestamp\":1545995451,\"machineIdentifier\":11333434,\"processIdentifier\":3093,\"counter\":12242849,\"time\":1545995451000,\"date\":\"2018-12-28T11:10:51.000+0000\",\"timeSecond\":1545995451},\"name\":\"lydia\",\"prixachat\":200,\"prixvente\":100}]"
+				}
+			]
+		},
+		{
+			"name": "Get all product",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							" {",
+							"     \"itemName\": \"kaka\",",
+							"        \"itemQuantity\": \"12\",",
+							"        \"itemBought\": \"false\"",
+							"     ",
+							" }"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "http://localhost:4445/produit/p",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\": \"Calculatrice\", \n\"prixachat\": 200, \n\"prixvente\": 100\n\t\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "create product",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							" {",
+							"     \"itemName\": \"kaka\",",
+							"        \"itemQuantity\": \"12\",",
+							"        \"itemBought\": \"false\"",
+							"     ",
+							" }"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "http://localhost:4445/produit/p",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\": \"Calculatrice\", \n\"prixachat\": 200, \n\"prixvente\": 100\n\t\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get all product",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							" {",
+							"     \"itemName\": \"kaka\",",
+							"        \"itemQuantity\": \"12\",",
+							"        \"itemBought\": \"false\"",
+							"     ",
+							" }"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "http://localhost:4445/produit/",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\": \"Calculatrice\", \n\"prixachat\": 200, \n\"prixvente\": 100\n\t\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "marge product",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							" {",
+							"     \"itemName\": \"kaka\",",
+							"        \"itemQuantity\": \"12\",",
+							"        \"itemBought\": \"false\"",
+							"     ",
+							" }"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "http://localhost:4445/produit/marge",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\": \"Calculatrice\", \n\"prixachat\": 200, \n\"prixvente\": 100\n\t\n}"
+				},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "b84d5472-f835-4f70-b99f-9560664d946e",
+					"name": "response marge product",
+					"originalRequest": {
+						"url": "http://localhost:4445/produit/marge",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"name\": \"Calculatrice\", \n\"prixachat\": 200, \n\"prixvente\": 100\n\t\n}"
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json;charset=UTF-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Sat, 12 Jan 2019 21:21:00 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "transfer-encoding",
+							"key": "transfer-encoding",
+							"value": "chunked",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						}
+					],
+					"cookie": [],
+					"responseTime": 132,
+					"body": "[\"spot 0\",\"belle 0\",\"koukou 0\",\"spot -50\",\"koukou 0\",\"lydia 0\",\"lydia 0\",\"lydia -200\",\"lydia -200\",\"lydia -100\",\"Calculatrice -100\"]"
+				}
+			]
+		},
+		{
+			"name": "trier",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							" {",
+							"     \"itemName\": \"kaka\",",
+							"        \"itemQuantity\": \"12\",",
+							"        \"itemBought\": \"false\"",
+							"     ",
+							" }"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "http://localhost:4445/produit/k",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\": \"Calculatrice\", \n\"prixachat\": 200, \n\"prixvente\": 100\n\t\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
